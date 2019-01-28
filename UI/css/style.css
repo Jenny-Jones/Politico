@@ -1,0 +1,581 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 0;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    position: absolute;
+	background-size: cover;
+	background-image: url(../images/header-img.jpg);
+	border-bottom: 0px solid transparent;
+}
+header .coloroverlay{
+    width: 100%;
+    position: absolute;
+    height: 650px;
+    background-color: #0bc74a;
+    opacity: 0.5;
+}
+.header2{
+    text-align: center;
+    width: 100%;
+    top: 0;
+    height: 350px;
+    position: absolute;
+	background-size: cover;
+	background-image: url(../images/header-img.jpg);
+}
+.header2 .coloroverlay3{
+    width: 100%;
+    position: absolute;
+    height: 350px;
+    background-color: #0bc74a;
+    opacity: 0.5;
+}
+.header2 h1{
+    margin: 0 auto;
+    text-align: center;
+    width: 20rem;
+    margin-top: 5rem;
+    color: #ffffff;
+    border-bottom: 4px solid #63fa55;
+    padding-bottom: 2rem;
+    font-size: 60px;
+}
+.line1{
+    margin-top: 2%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 0.6%;
+}
+.line2{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    opacity: 0.4;
+    height: 0.6%;
+}
+nav{
+    width: 100%;
+    display: flex;
+}
+nav a{
+    margin-bottom: 1%;
+    padding: 0;
+    text-decoration: none;
+    margin-left: 5%;
+    color: #ffffff;
+	border-bottom: 0px solid #E8E7EC;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+nav a:hover{
+    border-bottom: 3.5px solid #dbffe9;
+    color: #63fa55;
+}
+.votebutton{
+    line-height: 44px;
+    align-content: center;
+    margin-top: 15%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffffff;
+    width: 20%;
+    height: 7%;
+	border-bottom: 0px solid #E8E7EC;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.votebutton a{
+    text-decoration: none;
+    color: #033517;
+    font-weight: bold;
+	border-bottom: 0px solid #E8E7EC;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.votebutton:hover a{
+    color: #dbffe9;
+}
+.votebutton:hover{
+    background-color: #033517;
+}
+@media(max-width: 968px){
+    .votebutton{
+        width: 40%;
+    }
+    nav{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+.mid-body{
+    width: 100%;
+    height: 100rem;
+}
+.polls{
+    margin-bottom: -30rem;
+    bottom: 0;
+    position: absolute;
+    background-color: #0bc74a;
+    width: 100%;
+    height: 25rem;
+}
+.polls p{
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+.discuss{
+    margin-bottom: -60rem;
+    bottom: 0;
+    position: absolute;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, .175);
+    width: 100%;
+    height: 25rem;
+}
+section{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1rem;
+    height: 5rem;
+    width: 100%;
+}
+section p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: justify;
+    line-height: 24px;
+}
+.contact-info{
+    position: absolute;
+    margin-top: 30rem;
+    margin-bottom: -10rem;
+    height: 5rem;
+    width: 100%;
+}
+.contact-info .contact-container{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 968px){
+    .contact-info .contact-container{
+        width: 60%;
+        display: block;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .contact-info .showcase{
+        margin-top: 2rem;
+        width: 10%;
+        height: 22rem;
+        padding-left: 0;
+    }
+    .contact-container .card{
+        display: flex;
+        width: 105%;
+    }
+    .showcase .showcase-container{
+        display: flex;
+        width: 70%;
+    }
+}
+.contact-container .card{
+    width: 65%;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, .175);
+}
+.contact-info .showcase{
+    padding-top: 2rem;
+    padding-right: 10%;
+    padding-left: 6%;
+    width: 120%;
+    height: 23rem;
+    background-image: url(../images/2015-03-30_nigerian_voters_demonstrate_commitment_to_process_election_day_logistics_need_improvement_4.jpg)
+}
+.showcase .showcase-container{
+    display: flex;
+    width: 100%;
+}
+.showcase-container .form{
+    display: flex;
+    margin-bottom: auto;
+}
+.leftside .showleft{
+	box-shadow: 0px 2px 27px rgba(0, 0, 0, .175);
+	margin-bottom: 4%;
+	border: 0px;
+	height: 20%;
+	width: 110%;
+	font-size: 1.2em;
+    padding-bottom: 0;
+    margin-top: 5.2%;
+    padding-left: 10%;
+}
+.rightside input{
+	box-shadow: 0px 2px 27px rgba(0, 0, 0, .175);
+    margin-bottom: 2%;
+	border: 0px;
+	height: 15%;
+	width: 140%;
+	font-size: 1.2em;
+    margin-top: 5%;
+    margin-left: 25%;
+	padding-bottom: 0;
+    padding-left: 10%;
+}
+.rightside .messagebox{
+	box-shadow: 0px 2px 27px rgba(0, 0, 0, .175);
+    border: 0px;
+    height: 19%;
+    padding-left: 10%;
+    padding-bottom: 67%;
+    width: 130%;
+	font-size: 1.2em;
+}
+.rightside .sbutton{
+    color: #ffffff;
+	background-color: #0bac20;
+}
+
+.card .blackcontent{
+	display: flex;
+}
+
+.blackcontent{
+	margin-top: 8%;
+	margin-left: 11%;
+}
+
+.blackcontent .hori{
+	display: block;
+	width: 60%;
+	height: 10px;
+}
+.hori a{
+    width: 4%;
+}
+.blackcontent i{
+	margin-top: 3.5%;
+	padding: 5% 5% 5% 5%;
+    color: grey;
+    width: 5%;
+	background-color: white;
+	border: 3px solid grey;
+}
+
+.blackcontent h4{
+	margin-left: 8%;
+	color: #1FA462;
+}
+
+.blackcontent .hori p{
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-left: 8%;
+	color: #267CC3;
+	line-height: 18px;
+}
+
+.blackcontent .hori a{
+	text-decoration: none;
+	color: darkgrey;
+	margin-left: 8%;
+}
+
+.blackcontent a:hover{
+	color: skyblue;
+}
+
+.login-container{
+    margin-top: 25rem;
+    height: 30rem;
+    width: 100%;
+}
+.login-container .login-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #1dbd25;
+    height: 30rem;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+}
+.login-form form{
+    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form input{
+    text-align: center;
+    width: 100%;
+    border: 0px solid transparent;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+form .sbutton{
+    font-size: 20px;
+    color: #ffffff;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+    background-color: #109e23;
+	border-bottom: 0px solid #E8E7EC;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+form .sbutton:hover{
+    font-size: 20px;
+    color: #ffffff;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+    background-color: #076113;
+}
+form .checkbox{
+    width: 3%;
+    line-height: 0px;
+}
+.select{
+    margin: auto;
+    display: flex;
+}
+.select p{
+    color: #ffffff;
+    margin: 5.3%;
+}
+.signup-container{
+    margin-top: 25rem;
+    height: 30rem;
+    width: 100%;
+}
+.signup-container .signup-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #1dbd25;
+    height: 40rem;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+}
+.signup-form form{
+    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.profile-container{
+    position: absolute;
+    margin-top: 25rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 40rem;
+	box-shadow: 0px 1px 57px rgba(37, 37, 37, 0.377);
+}
+.profile-container .box1{
+    margin: 0.2rem;
+    height: auto;
+    background-color: #2d8b16;
+    width: 35%;
+}
+.box1 img{
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    border-radius: 150px;
+}
+.box1 p{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+.box1 .change-container{
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: #16b82b;
+}
+.change-container p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 0px;
+    background-color: #16b82b;
+}
+.box1 a{
+    text-align: center;
+    text-decoration: none;
+}
+.box2{
+    background-color: #b7f3bf;
+}
+.profile-container .box2{
+    margin: 0.2rem;
+    height: auto;
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -80rem;
+    height: 13rem;
+    width: 100%;
+    background-image: url(../images/2015-03-30_nigerian_voters_demonstrate_commitment_to_process_election_day_logistics_need_improvement_4.jpg);
+    background-size: cover;
+}
+footer .coloroverlay2{
+    width: 100%;
+    position: absolute;
+    height: 13rem;
+    background-color: #043016;
+    opacity: 0.75;
+}
+footer h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 1rem;
+    color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+footer2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -30rem;
+    height: 13rem;
+    width: 100%;
+    background-image: url(../images/2015-03-30_nigerian_voters_demonstrate_commitment_to_process_election_day_logistics_need_improvement_4.jpg);
+    background-size: cover;
+}
+footer2 .coloroverlay2{
+    width: 100%;
+    position: absolute;
+    height: 13rem;
+    background-color: #043016;
+    opacity: 0.75;
+}
+footer2 h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: start;
+    border-bottom: 4px solid #ffffff;
+}
+footer3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -40rem;
+    height: 13rem;
+    width: 100%;
+    background-image: url(../images/2015-03-30_nigerian_voters_demonstrate_commitment_to_process_election_day_logistics_need_improvement_4.jpg);
+    background-size: cover;
+}
+footer3 h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: start;
+    border-bottom: 4px solid #ffffff;
+}
+.changepassword-form form{
+    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form input{
+    text-align: center;
+    width: 100%;
+    border: 0px solid transparent;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+form .changepasswordbutton{
+    font-size: 20px;
+    color: #ffffff;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+    background-color: #109e23;
+	border-bottom: 0px solid #E8E7EC;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+form .changepasswordbutton:hover{
+    font-size: 20px;
+    color: #ffffff;
+	box-shadow: 0px 20px 47px rgba(0, 0, 0, .175);
+    background-color: #076113;
+}
+.changepassword-form select{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 3.2rem;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    padding-left: 1rem;
+    color: #033517;
+    display: flex;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.changepassword-form .ver{
+    display: flex;
+}
+.changepassword-form .deletebutton{
+    width: 30%;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    background-color: #c21a1a;
+}
+.changepassword-form .admininupt{
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.changepassword-form .updatebutton{
+    width: 30%;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 1rem;
+    background-color: #1ac21a;
+}
