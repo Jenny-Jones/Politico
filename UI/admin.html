@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Politico || Admin Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut Icon" href="images/turnshopcorpicon.png">
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css" >
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css" >
+        <script type="text/javascript" src="js/validation.js"></script>
+    </head>
+    <body>
+        <header class="header2">
+            <div class="coloroverlay3"/>
+            <div class="line1"></div>
+            <nav>
+                <a href="index.html"><h4>Home</h4></a>
+                <a href="login.html"><h4>Login</h4></a>
+                <a href="signup.html"><h4>Sign up</h4></a>
+                <a href="contactus.html"><h4>Contact us</h4></a>
+                <a href="aboutus.html"><h4>About us</h4></a>
+            </nav>
+            <div class="line2"></div>
+            <h1>Admin</h1>
+        </header>
+
+        <div class="profile-container">
+            <div class="box1">
+                <img src="images/image.jpg">
+                <p>Jenny Jones</p>
+                <p>jennyjonesigwe@yahoo.com</p>
+            </div>
+            <div class="box2">
+                    <div class="changepassword-form">
+                            <form method="POST" action="admin.html" >
+                                <div class="ver">
+                                    <select name="Parties">
+                                        <option value="ACP">PDP</option>
+                                        <option value="ACP">APC</option>
+                                        <option value="ACP">APGA</option>
+                                        <option value="ACP">CCA</option>
+                                     </select><input class="deletebutton" type="button" value="Delete Party" >
+                                </div>
+                                </br>
+                                <div class="ver">
+                                        <select name="Parties">
+                                                <option value="ACP">PDP</option>
+                                                <option value="ACP">APC</option>
+                                                <option value="ACP">APGA</option>
+                                                <option value="ACP">CCA</option>
+                                             </select>
+                                    <input class="admininupt" type="text" placeholder="New Party Name">
+                                    <input class="updatebutton" type="button" value="Update Party" >
+                                </div>
+                                <div class="ver">
+                                    <input class="admininupt" type="text" placeholder="Party Name">
+                                    <input class="updatebutton" type="button" value="Create Party" >
+                                </div><br>
+                                <input class="changepasswordbutton" type="submit" onclick="" value="Save Changes" name="Login">
+                            </form>
+                        </div>
+            </div>
+        </div>
+        
+        <footer3>
+            <div class="coloroverlay2"/>
+            <h3>Admin Portal</h3>
+        </footer3>
+    </body>
+</html>
