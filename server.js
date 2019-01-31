@@ -16,7 +16,6 @@ app.get(`${apiVersion}parties`, (req, res) => {
     return res.status(200).send({
         status: 200,
         parties,
-        message: 'All the Parties',
     })
     return res.status(400).send({
         message: 'Database is empty!',
