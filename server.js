@@ -16,11 +16,24 @@ app.get(`${apiVersion}parties`, (req, res) => {
     return res.status(200).send({
         status: 200,
         parties,
-        message: 'All the Parties',
     })
     return res.status(400).send({
         message: 'Database is empty!',
     })
+});
+
+// get single party
+app.get(`${apiVersion}parties/:id`, (req, res) => {
+    const findParty = parties.filter(party => party.id === parseInt(req.params.id, 10));
+    if (findParty) {
+        return res.status(200).send({
+            party: findParty,
+            message: 'gotten a single party',
+        });
+    }
+    return res.status(400).send({
+        message: 'party not found',
+    });
 });
 
 app.listen(port, () => console.log(`app is running on port ${port}`));
