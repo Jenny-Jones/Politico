@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const parties = require('./db/parties');
+const offices = require('./db/offices');
 
 const port = process.env.PORT || 3000;
 
@@ -18,7 +19,7 @@ app.get(`${apiVersion}parties`, (req, res) => {
         parties,
     })
     return res.status(400).send({
-        message: 'Database is empty!',
+        
     })
 });
 
@@ -28,12 +29,38 @@ app.get(`${apiVersion}parties/:id`, (req, res) => {
     if (findParty) {
         return res.status(200).send({
             party: findParty,
-            message: 'gotten a single party',
+        });
+    }
+});
+
+// get political offices
+app.get(`${apiVersion}offices`, (req, res) => {
+    if (offices.length > 0)
+    return res.status(200).send({
+        status: 200,
+        offices,
+    })
+    return res.status(400).send({
+    
+    })
+});
+
+// get a single office
+app.get(`${apiVersion}offices/:id`, (req, res) => {
+    const findOffice = offices.filter(office => office.id === parseInt(req.params.id, 10));
+    if (findOffice) {
+        return res.status(200).send({
+            status: 200,
+            office: findOffice,
+            
         });
     }
     return res.status(400).send({
-        message: 'party not found',
+       
     });
 });
+
+
+// 
 
 app.listen(port, () => console.log(`app is running on port ${port}`));
