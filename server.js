@@ -19,7 +19,7 @@ app.get(`${apiVersion}parties`, (req, res) => {
         parties,
     })
     return res.status(400).send({
-        message: 'Database is empty!',
+        
     })
 });
 
@@ -29,12 +29,8 @@ app.get(`${apiVersion}parties/:id`, (req, res) => {
     if (findParty) {
         return res.status(200).send({
             party: findParty,
-            message: 'gotten a single party',
         });
     }
-    return res.status(400).send({
-        message: 'party not found',
-    });
 });
 
 // get political offices
@@ -43,10 +39,9 @@ app.get(`${apiVersion}offices`, (req, res) => {
     return res.status(200).send({
         status: 200,
         offices,
-        message: 'All the available offices',
     })
     return res.status(400).send({
-        message: 'Database is empty!',
+    
     })
 });
 
@@ -56,11 +51,11 @@ app.get(`${apiVersion}offices/:id`, (req, res) => {
     if (findOffice) {
         return res.status(200).send({
             office: findOffice,
-            message: 'gotten a single office',
+            
         });
     }
     return res.status(400).send({
-        message: 'office not found',
+       
     });
 });
 
