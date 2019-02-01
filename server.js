@@ -50,6 +50,7 @@ app.get(`${apiVersion}offices/:id`, (req, res) => {
     const findOffice = offices.filter(office => office.id === parseInt(req.params.id, 10));
     if (findOffice) {
         return res.status(200).send({
+            status: 200,
             office: findOffice,
             
         });
@@ -58,5 +59,8 @@ app.get(`${apiVersion}offices/:id`, (req, res) => {
        
     });
 });
+
+
+// 
 
 app.listen(port, () => console.log(`app is running on port ${port}`));
